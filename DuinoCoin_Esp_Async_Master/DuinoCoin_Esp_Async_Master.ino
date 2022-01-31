@@ -13,9 +13,10 @@ void Wire_send(byte address, String message);
 String wire_readLine(int address);
 boolean wire_runEvery(unsigned long interval);
 
-const char* ssid          = "";         // Change this to your WiFi SSID
-const char* password      = "";         // Change this to your WiFi password
-const char* ducouser      = "ricaun";   // Change this to your Duino-Coin username
+#include "credentials.h"
+//const char* ssid          = "";         // Change this to your WiFi SSID
+//const char* password      = "";         // Change this to your WiFi password
+const char* ducouser      = "BRock";   // Change this to your Duino-Coin username
 const char* rigIdentifier = "AVR-I2C";  // Change this if you want a custom miner name
 
 #if ESP8266
